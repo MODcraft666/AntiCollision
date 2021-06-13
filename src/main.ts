@@ -24,7 +24,7 @@ window.addEventListener('wheel', ({ deltaY }) => {
   updateScale(-deltaY / 5000)
 })
 
-let initialDistance = null
+let initialDistance = 1
 
 window.addEventListener('touchstart', ({ touches }) => {
   if (touches.length > 1) {
@@ -57,7 +57,7 @@ function updateScale(pos: number) {
   scale = wheelPos * (maxScale - minScale) + minScale
 }
 
-let speedDownFactor = 1;
+let speedDownFactor = 2;
 let speedDownCounter = 1;
 let waitingSpeedFactor = 1;
 let speedDownFactorGoal = 1;
