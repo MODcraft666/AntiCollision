@@ -58,7 +58,7 @@ function updateScale(pos: number) {
 }
 
 let speedDownFactor = 2;
-let speedDownCounter = 1;
+let speedDownCounter = 2;
 let waitingSpeedFactor = 1;
 let speedDownFactorGoal = 1;
 
