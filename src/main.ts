@@ -57,13 +57,13 @@ function updateScale(pos: number) {
   scale = wheelPos * (maxScale - minScale) + minScale
 }
 
-let speedDownFactor = 2;
-let speedDownCounter = 2;
+let speedDownFactor = 3;
+let speedDownCounter = 1;
 let waitingSpeedFactor = 1;
 let speedDownFactorGoal = 1;
 
 
-const nBalls = 20;
+const nBalls = 30;
 const maxSize = 5;
 const minSize = 70;
 
